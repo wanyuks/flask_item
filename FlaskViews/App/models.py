@@ -5,9 +5,9 @@ from App.ext import db
 
 class Students(db.Model):
     s_id = db.Column(db.Integer, primary_key=True)
-    s_name = db.Column(db.String(32), unique=True)
-    _s_password = db.Column(db.String(256))
-    s_phone = db.Column(db.String(32), nullable=False, unique=True)
+    s_job_id = db.Column(db.String(32), unique=True)
+    # _s_password = db.Column(db.String(256))
+    # s_phone = db.Column(db.String(32), nullable=False, unique=True)
 
     @property
     def s_password(self):
@@ -23,7 +23,7 @@ class Students(db.Model):
 
 class User(db.Model):
     # 修改表名
-    __tablename__ = "users_new"
+    # __tablename__ = "users_new"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(16), unique=True)
     description = db.Column(db.String(128), nullable=True)

@@ -30,17 +30,17 @@ class DevelopmentConfig(Config):
         "DEVICE": "pymysql",
         "USERNAME": "root",
         "PASSWORD": "123456",
-        "HOST": "localhost",
-        "PORT": 3306,
-        "DATABASE": "first_flask"
+        "HOST": "10.57.20.154",
+        "PORT": 3307,
+        "DATABASE": "fit"
     }
 
-    MAIL_SERVER = 'smtp.163.com'
-    MAIL_PORT = 25
-    MAIL_USE_TLS = True
-    MAIL_USERNAME = "wangwanyuks@163.com"
-    MAIL_PASSWORD = "wanyuks4626417"
-    MAIL_DEFAULT_SENDER = MAIL_USERNAME
+    # MAIL_SERVER = 'smtp.163.com'
+    # MAIL_PORT = 25
+    # MAIL_USE_TLS = True
+    # MAIL_USERNAME = "wangwanyuks@163.com"
+    # MAIL_PASSWORD = "wanyuks4626417"
+    # MAIL_DEFAULT_SENDER = MAIL_USERNAME
 
     SQLALCHEMY_DATABASE_URI = get_db_uri(db_info)
 
